@@ -2,22 +2,4 @@
 <Bucket
    type = "1"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TqcBundleAdjust.cpp"
-            timestampString = "501129032.404739"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
-            landmarkName = "FindCorrespondingPoints(const cv::Mat &amp;img1, const cv::Mat &amp;img2, vector&lt;cv::Point2f&gt; &amp;points1, vector&lt;cv::Point2f&gt; &amp;points2, bool bDraw, Mat &amp;match, Mat &amp;goodMatch)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

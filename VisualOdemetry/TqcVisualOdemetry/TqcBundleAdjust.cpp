@@ -18,11 +18,13 @@ bool PoseEstimate(Mat &prev, Mat &cur, Eigen::Isometry3d &pose, bool bDraw, Mat 
     vector<cv::Point2f> pts1, pts2;
     if (FindCorrespondingPoints(img1, img2, pts1, pts2, bDraw, match, goodMatch) == false)
     {
-        // qDebug() << "匹配点不够！" << endl;
         return false;
     }
 
+#if TQC_DEBUG
     cout << "找到了" << pts1.size() << "组对应特征点。" << endl;
+#endif
+    
     // 构造g2o中的图
     // 先构造求解器
     g2o::SparseOptimizer optimizer;
@@ -113,7 +115,39 @@ bool PoseEstimate(Mat &prev, Mat &cur, Eigen::Isometry3d &pose, bool bDraw, Mat 
     g2o::VertexSE3Expmap *v = dynamic_cast<g2o::VertexSE3Expmap*>(optimizer.vertex(1));
 
     pose = v->estimate();
+    
+    // Calc movement, if the norm value is greater than TQC_BA_MAX_NORM,
+    // We will abandon this pose.
+    Mat rMat;
+    Mat tVec;
+    Mat rVec;
+    double norm;
+    Eigen::Isometry3d::TranslationPart  t = pose.translation();
+    Eigen::Isometry3d::LinearMatrixType r = pose.rotation();
+
+    eigen2cv(r, rMat);
+    //eigen2cv(t, tVec);
+    tVec = Mat(1, 3, CV_32FC1);
+    tVec.at<float>(0) = t[0];
+    tVec.at<float>(1) = t[1];
+    tVec.at<float>(2) = t[2];
+    
+    // Convert rotation matrix to vector.
+    Rodrigues(rMat, rVec);
+    norm = NormOfTransform(rVec, tVec);
+    if (norm > TQC_BA_MAX_NORM)
+    {
+#if TQC_DEBUG
+        cout << "rotation" << rVec << endl;
+        cout << "translation" << tVec << endl;
+#endif
+        
+        return false;
+    }
+    
+#if TQC_DEBUG
     cout << "Pose=" << endl << pose.matrix() << endl;
+#endif
 
     return true;
 }
@@ -158,7 +192,7 @@ bool FindCorrespondingPoints(const cv::Mat &img1, const cv::Mat &img2, vector<cv
     }
 
     // 筛选匹配，把距离太大的去掉
-    // 这里使用的准则是去掉大于四倍最小距离的匹配
+    // 这里使用的准则是去掉大于6倍最小距离的匹配
     vector<cv::DMatch> goodMatches;
     float              minDis = 9999;
 
@@ -177,19 +211,26 @@ bool FindCorrespondingPoints(const cv::Mat &img1, const cv::Mat &img2, vector<cv
             goodMatches.push_back(matches[i]);
     }
 
+#if 0
     if (matches.size() <= 20) // 匹配点太少
     {
         qDebug() << "匹配点太少：" << matches.size() << endl;
         return false;
     }
 
-#if 0
+
     for (auto m:matches)
     {
         points1.push_back(kp1[m.queryIdx].pt);
         points2.push_back(kp2[m.trainIdx].pt);
     }
 #endif
+    
+    if (goodMatches.size() <= 20) // 匹配点太少
+    {
+        qDebug() << "匹配点太少：" << goodMatches.size() << endl;
+        return false;
+    }
     
     // We uses good matches.
     for (auto m:goodMatches)
@@ -205,6 +246,13 @@ bool FindCorrespondingPoints(const cv::Mat &img1, const cv::Mat &img2, vector<cv
     }
 
     return true;
+}
+
+double NormOfTransform(cv::Mat rvec, cv::Mat tvec)
+{
+    // 我们计算了一个度量运动大小的值：|Δt|+min(2π−|r|,|r|)
+    // 它可以看成是位移与旋转的范数加和。当这个数大于阈值TQC_BA_MAX_NORM时，我们就认为匹配出错了。
+    return fabs(min(cv::norm(rvec), 2*M_PI-cv::norm(rvec)))+ fabs(cv::norm(tvec));
 }
 
 CBundleAdjustThread::CBundleAdjustThread()
@@ -232,6 +280,7 @@ void CBundleAdjustThread::run()
     Mat               drawMatch;
     Mat               drawGoodMatch;
     Eigen::Isometry3d pose;
+    int               nProcessedFrame = 0;
 
     m_prevFrame = Mat();
     ReleaseMatQueue();
@@ -262,6 +311,7 @@ void CBundleAdjustThread::run()
 
             if (!m_prevFrame.empty())
             {
+                nProcessedFrame ++;
                 if (PoseEstimate(m_prevFrame, frame, pose, m_bDrawMatch, drawMatch, drawGoodMatch))
                 {
                     PushPose(pose);

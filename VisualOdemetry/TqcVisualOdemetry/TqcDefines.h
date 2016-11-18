@@ -1,6 +1,8 @@
 #ifndef __TQC_DEFINES_H
 #define __TQC_DEFINES_H
 
+#define TQC_DEBUG                    1    // Enable debug code.
+
 #define TQC_Z_SCALE 10.0
 
 #define TQC_POSE_VERTEX_COLOR        0.5f, 0.5f, 0.8f
@@ -37,6 +39,7 @@
 #define TQC_BA_MAT_QUEUE_SLEEP_TIME_MAX 50
 #define TQC_BA_MAT_QUEUE_SLEEP_TIME_MIN 5
 #define TQC_BA_DISTANCE_SCALE           6  // for keypoits match filter.
+#define TQC_BA_MAX_NORM                 0.3
 
 // Debug Output string
 #define TQC_DEBUG_STR_GLOBAL_T    "Global t"

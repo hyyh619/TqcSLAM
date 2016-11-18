@@ -14,6 +14,7 @@
 #include <QMutex>
 
 #include "TqcTypes.h"
+#include <opencv2/core/eigen.hpp>
 #include "TqcThread.h"
 
 using namespace cv;
@@ -24,6 +25,7 @@ using namespace std;
 // 输出：points1, points2, 两组对应的2D点
 bool FindCorrespondingPoints(const Mat &img1, const Mat &img2, vector<Point2f> &points1, vector<Point2f> &points2, bool bDraw, Mat &match, Mat &goodMatch);
 bool PoseEstimate(Mat &prev, Mat &cur, Eigen::Isometry3d &pose, bool bDraw, Mat &match, Mat &goodMatch);
+double NormOfTransform(cv::Mat rvec, cv::Mat tvec);
 
 class CBundleAdjustThread : public CThread
 {
