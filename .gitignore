@@ -1,0 +1,11 @@
+*DS_Store
+data/
+result/
+*.o
+VisualOdemetry/build-TqcVisualOdemetry-Desktop_Qt_5_7_0_clang_64bit-Debug/
+Debug/
+Relase/
+cscope.files
+moc_*
+ui_*
+VisualOdemetry/TqcVisualOdemetry/TqcVisualOdemetry.build/

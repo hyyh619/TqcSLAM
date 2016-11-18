@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F22DE68F62D1D278EB27DA54 /* Qt Preprocess */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "TqcVisualOdemetry" */;
+			buildPhases = (
+				5E618435888B9D49F8540165 /* Qt Qmake */,
+				7EF0942E79C014DCEC8976BC /* Qt Preprocessors */,
+			);
+			dependencies = (
+			);
+			name = "Qt Preprocess";
+			productName = "Qt Preprocess";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0365F78C4443395CA6BDBEF4 /* opencv_calib3d in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9B9ED679BC1CBCB001E80921 /* opencv_calib3d */; };
+		049A8E5BB72C61A6D5F9186A /* opencv_stitching in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 33964D2A20573D76DAE50939 /* opencv_stitching */; };
+		0C6B141319017E3905870955 /* opencv_video in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = AEBD8FC60A11DC456B0BD274 /* opencv_video */; };
+		1482AF7A01D6F79DB755416A /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C980F569B736BB10FDBE25E8 /* QtCore.framework */; };
+		153BF6B46FF5494883F1A862 /* TqcScene.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E34AC0F6081CDDD3754E6D63 /* TqcScene.cpp */; settings = {ATTRIBUTES = (); }; };
+		171DAEB8EA2ADC2A40081AF2 /* g2o_csparse_extension_d in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8F0E3D9BE977D41D20422FDC /* g2o_csparse_extension_d */; };
+		17266B66F00FA2761D3475A5 /* mp3lame in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0F9416C798FEF86B99A23EB9 /* mp3lame */; };
+		19928BA7B17D949AE2CC20E1 /* g2o_core_d in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 28711FF48239C7D64953A963 /* g2o_core_d */; };
+		1E2F8DEFA8C39EC98FFE3A67 /* opencv_objdetect in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 66983C54BB147F4B81B6A6EF /* opencv_objdetect */; };
+		20D9D0EBF07CD6FB4A27C6C6 /* TqcBundleAdjust.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3F2701A35EB316BA6266FF92 /* TqcBundleAdjust.cpp */; settings = {ATTRIBUTES = (); }; };
+		27EB3E5BEB306CBF0B6EFA70 /* opencv_imgproc in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0A35011D482E6D9089E763E8 /* opencv_imgproc */; };
+		2A00F922A9934E49D93B2EB9 /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 81BAD8C3EA9A59F5ABF85CC9 /* QtWidgets.framework */; };
+		2D07EBEAF811DBF3CEB655A7 /* opencv_viz in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6891B5C96A235F1ED5A2C417 /* opencv_viz */; };
+		33C59837A1E2B943286FAB6C /* TqcEncodeDecode.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 21F0AC12464FE0A3E243E1ED /* TqcEncodeDecode.cpp */; settings = {ATTRIBUTES = (); }; };
+		3E93F27E01BB20C5B2BE8C86 /* avdevice in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FDB3E92CAC3547FB7981B747 /* avdevice */; };
+		48A078370DAF7CADDB64D54D /* opencv_core in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 20CD8DC58640914DFBA73AEF /* opencv_core */; };
+		4A7A78EC2033B26144D4C30A /* VoMainWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = D1F93849AA3DC2BFD9A47951 /* VoMainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		4B7C21B1359ADB5FD72B4438 /* opencv_videoio in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = CB101DF2FEB93B0B46094067 /* opencv_videoio */; };
+		4C71E02E035CF614305BB876 /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = DB6B379A33AD88C220D5D5BE /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		5131C1459B4549772CF10504 /* opencv_imgcodecs in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8F3220AC8D4D6E10B9C71087 /* opencv_imgcodecs */; };
+		53816C40D2310847397AC29B /* opencv_shape in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8AAAACFDB252ABED09161A09 /* opencv_shape */; };
+		595B92678652B10DA0D38D3D /* moc_MatchDialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 207E4612E0256E12B8B9ADA3 /* moc_MatchDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		5F29DDB884B9AE4DB6D48317 /* TqcCamera.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 7C78DB2D3FE0DAA97D3CC525 /* TqcCamera.cpp */; settings = {ATTRIBUTES = (); }; };
+		617991209BF0FC78D1D2408E /* avcodec in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = EE90BAEF6760BF970DD6766C /* avcodec */; };
+		61F667D3AF55DBF060380CE9 /* opencv_flann in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D7F5BD1A361E16E138DC178E /* opencv_flann */; };
+		6530A720D3C8E62EB9F4C788 /* Tqc3dViewer.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 7B76846928971ED095278A82 /* Tqc3dViewer.cpp */; settings = {ATTRIBUTES = (); }; };
+		6BFD2394A8B45165461A17C6 /* avformat in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FDCD14145649D527E134E3AC /* avformat */; };
+		6E84C985B1785517221216A5 /* opencv_ml in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = DF3A8C5D27EFCF32558EE75A /* opencv_ml */; };
+		762A1E67C48125330EC4BD53 /* g2o_types_sba_d in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = EDE61DAC3610E8BA9DD349FD /* g2o_types_sba_d */; };
+		7B1F9A21D72F3AE1069AC764 /* TqcThread.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B3BF6A520B31A7DA20D47FB6 /* TqcThread.cpp */; settings = {ATTRIBUTES = (); }; };
+		7C8A4AC0B4D3A1EF182A68CE /* swscale in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C844984803BA701C9F6BF7E9 /* swscale */; };
+		7EB6F1247FD767E54A549FC4 /* MatchDialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B4F526BB36A57B8A6634F51F /* MatchDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		7EE1DB772F69B1F6B7D09051 /* g2o_types_slam3d_d in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 40E1E6B715E939F4BEA03866 /* g2o_types_slam3d_d */; };
+		84F1796C590FAEBC2BAADD0F /* opencv_features2d in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 87A059234557546133E4567E /* opencv_features2d */; };
+		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
+		87C9454F875E8724E32C31F8 /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D43C8FA6127C8C18F2FB343D /* QtGui.framework */; };
+		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
+		9079CD915EAAEEAEB5E429EA /* QtOpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = EE3EA9D46073D75EB87AE756 /* QtOpenGL.framework */; };
+		91C8ADAE6D2147D70C91278A /* QGLViewer in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FC66008D576F98253E1AACEA /* QGLViewer */; };
+		9232DA0D7D1814017437A363 /* opencv_highgui in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 56537984D5553E0283ECDF43 /* opencv_highgui */; };
+		9A9C81CB9F90F09E7F58AF6B /* moc_TqcThread.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 4A9A372CE6C44F18A422FF1A /* moc_TqcThread.cpp */; settings = {ATTRIBUTES = (); }; };
+		A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */; };
+		B2288A2D34DDB0B2B89AF591 /* opencv_photo in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 105F983FADB21488C39E44F7 /* opencv_photo */; };
+		B6611D04BFADABD1C9008863 /* avfilter in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0EDCC72E08A60C6521FEC389 /* avfilter */; };
+		B98D8D70ED2F0E2FFBF20D91 /* OutputDialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E82FCDBC5EB21F75F15813E4 /* OutputDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		BA358861F74E287B54E0E712 /* cholmod in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 009510C121BC7D1118104CB2 /* cholmod */; };
+		C1A8D34F9D799173C1A5FF03 /* g2o_solver_csparse_d in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7E18FF978B33E171D0CC5B19 /* g2o_solver_csparse_d */; };
+		C57A3508FF5D3C8F9FE1128E /* moc_VoMainWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 8DE4E71C449D02EA7FEB7383 /* moc_VoMainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		C656382BB7E7468DEA59E5E5 /* TqcDebugControl.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 84648D2B21B5A263E2EDD75D /* TqcDebugControl.cpp */; settings = {ATTRIBUTES = (); }; };
+		CED4CB6F214B8C4C1B4BE715 /* moc_OutputDialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = C287E03DF34CBEFA13DCDCBF /* moc_OutputDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		CEEDA1EC0CE25F1C248DB3B2 /* g2o_stuff_d in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FA1AA07CF24B6900EDD54332 /* g2o_stuff_d */; };
+		D52505CE155F2990643CDDA8 /* QtXml.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 109CC4182E31C3B3C7F515E2 /* QtXml.framework */; };
+		E0D539182A78F28676F4F114 /* opencv_superres in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 53B7633754FC46FEDD8F11FD /* opencv_superres */; };
+		E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */; };
+		ED29F3FC3F480022A5F65363 /* avutil in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = DC4F6ED42B7AA87D882CB6FD /* avutil */; };
+		F0A9F27ED2CEED3241A0F29B /* opencv_videostab in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6C6CAEC0EA81CAAFFD89AC2C /* opencv_videostab */; };
+		F1E8CBB01213238820F976AD /* x264 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = E388715271573D8A5E3E5DAE /* x264 */; };
+		F41D965C7D229C2630E47A42 /* moc_TqcScene.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E2E7EEDF0AF0C52EF47938A2 /* moc_TqcScene.cpp */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18AF48961DDE982E00ECC0D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22DE68F62D1D278EB27DA54;
+			remoteInfo = "Qt Preprocess";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009510C121BC7D1118104CB2 /* cholmod */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = cholmod; path = /Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/SuiteSparse/lib/libcholmod.dylib; sourceTree = "<absolute>"; };
+		022B2FF68FCC54F3E6E034F5 /* TqcTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TqcTypes.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcTypes.h; sourceTree = "<absolute>"; };
+		07B93B32B26B66B9A8762BE6 /* ui_OutputDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_OutputDialog.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/ui_OutputDialog.h; sourceTree = "<absolute>"; };
+		0A35011D482E6D9089E763E8 /* opencv_imgproc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_imgproc; path = /usr/local/lib/libopencv_imgproc.dylib; sourceTree = "<absolute>"; };
+		0EDCC72E08A60C6521FEC389 /* avfilter */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = avfilter; path = /usr/local/lib/libavfilter.dylib; sourceTree = "<absolute>"; };
+		0F9416C798FEF86B99A23EB9 /* mp3lame */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = mp3lame; path = /usr/local/lib/libmp3lame.dylib; sourceTree = "<absolute>"; };
+		105F983FADB21488C39E44F7 /* opencv_photo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_photo; path = /usr/local/lib/libopencv_photo.dylib; sourceTree = "<absolute>"; };
+		109CC4182E31C3B3C7F515E2 /* QtXml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtXml.framework; path = /Users/yinghuang/Qt/5.7/clang_64/lib/QtXml.framework; sourceTree = "<absolute>"; };
+		19C9AAD7CD3BCEFA18E7348E /* MatchDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MatchDialog.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/MatchDialog.h; sourceTree = "<absolute>"; };
+		207E4612E0256E12B8B9ADA3 /* moc_MatchDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_MatchDialog.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/moc_MatchDialog.cpp; sourceTree = "<absolute>"; };
+		20CD8DC58640914DFBA73AEF /* opencv_core */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_core; path = /usr/local/lib/libopencv_core.dylib; sourceTree = "<absolute>"; };
+		21F0AC12464FE0A3E243E1ED /* TqcEncodeDecode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TqcEncodeDecode.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcEncodeDecode.cpp; sourceTree = "<absolute>"; };
+		230080827FA0EDCFE0EAA546 /* TqcEncodeDecode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TqcEncodeDecode.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcEncodeDecode.h; sourceTree = "<absolute>"; };
+		28711FF48239C7D64953A963 /* g2o_core_d */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = g2o_core_d; path = "/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/g2o-master/lib/Debug/libg2o_core_d.dylib"; sourceTree = "<absolute>"; };
+		29C85916DF24718181E18289 /* TqcVisualOdemetry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TqcVisualOdemetry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B18AC9E5262C1EBB875850D /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; name = .qmake.stash; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/.qmake.stash; sourceTree = "<absolute>"; };
+		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
+		33964D2A20573D76DAE50939 /* opencv_stitching */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_stitching; path = /usr/local/lib/libopencv_stitching.dylib; sourceTree = "<absolute>"; };
+		3538F64ABD8CFA563C887AD3 /* vomainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = vomainwindow.ui; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/vomainwindow.ui; sourceTree = "<absolute>"; };
+		3A3409C77D36D1F739E8654D /* TqcCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TqcCamera.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcCamera.h; sourceTree = "<absolute>"; };
+		3F2701A35EB316BA6266FF92 /* TqcBundleAdjust.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TqcBundleAdjust.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcBundleAdjust.cpp; sourceTree = "<absolute>"; };
+		40E1E6B715E939F4BEA03866 /* g2o_types_slam3d_d */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = g2o_types_slam3d_d; path = "/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/g2o-master/lib/Debug/libg2o_types_slam3d_d.dylib"; sourceTree = "<absolute>"; };
+		4A9A372CE6C44F18A422FF1A /* moc_TqcThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_TqcThread.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/moc_TqcThread.cpp; sourceTree = "<absolute>"; };
+		53B7633754FC46FEDD8F11FD /* opencv_superres */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_superres; path = /usr/local/lib/libopencv_superres.dylib; sourceTree = "<absolute>"; };
+		56537984D5553E0283ECDF43 /* opencv_highgui */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_highgui; path = /usr/local/lib/libopencv_highgui.dylib; sourceTree = "<absolute>"; };
+		5DCF61E318D6918A6FA13272 /* VoMainWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VoMainWindow.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/VoMainWindow.h; sourceTree = "<absolute>"; };
+		5E8A20268E2B3B3644C28529 /* MatchDialog.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = MatchDialog.ui; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/MatchDialog.ui; sourceTree = "<absolute>"; };
+		62E93A56E4A84DEA8FDB6466 /* ui_vomainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_vomainwindow.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/ui_vomainwindow.h; sourceTree = "<absolute>"; };
+		646FEF3C683527EB19F1C09C /* TqcDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TqcDefines.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcDefines.h; sourceTree = "<absolute>"; };
+		66983C54BB147F4B81B6A6EF /* opencv_objdetect */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_objdetect; path = /usr/local/lib/libopencv_objdetect.dylib; sourceTree = "<absolute>"; };
+		6891B5C96A235F1ED5A2C417 /* opencv_viz */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_viz; path = /usr/local/lib/libopencv_viz.dylib; sourceTree = "<absolute>"; };
+		6C6CAEC0EA81CAAFFD89AC2C /* opencv_videostab */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_videostab; path = /usr/local/lib/libopencv_videostab.dylib; sourceTree = "<absolute>"; };
+		7B76846928971ED095278A82 /* Tqc3dViewer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Tqc3dViewer.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/Tqc3dViewer.cpp; sourceTree = "<absolute>"; };
+		7C78DB2D3FE0DAA97D3CC525 /* TqcCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TqcCamera.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcCamera.cpp; sourceTree = "<absolute>"; };
+		7E18FF978B33E171D0CC5B19 /* g2o_solver_csparse_d */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = g2o_solver_csparse_d; path = "/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/g2o-master/lib/Debug/libg2o_solver_csparse_d.dylib"; sourceTree = "<absolute>"; };
+		80F1007EA95A3753460F9A92 /* Tqc3dViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tqc3dViewer.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/Tqc3dViewer.h; sourceTree = "<absolute>"; };
+		81BAD8C3EA9A59F5ABF85CC9 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = /Users/yinghuang/Qt/5.7/clang_64/lib/QtWidgets.framework; sourceTree = "<absolute>"; };
+		84648D2B21B5A263E2EDD75D /* TqcDebugControl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TqcDebugControl.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcDebugControl.cpp; sourceTree = "<absolute>"; };
+		87A059234557546133E4567E /* opencv_features2d */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_features2d; path = /usr/local/lib/libopencv_features2d.dylib; sourceTree = "<absolute>"; };
+		8AAAACFDB252ABED09161A09 /* opencv_shape */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_shape; path = /usr/local/lib/libopencv_shape.dylib; sourceTree = "<absolute>"; };
+		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		8DE4E71C449D02EA7FEB7383 /* moc_VoMainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_VoMainWindow.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/moc_VoMainWindow.cpp; sourceTree = "<absolute>"; };
+		8F0E3D9BE977D41D20422FDC /* g2o_csparse_extension_d */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = g2o_csparse_extension_d; path = "/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/g2o-master/lib/Debug/libg2o_csparse_extension_d.dylib"; sourceTree = "<absolute>"; };
+		8F3220AC8D4D6E10B9C71087 /* opencv_imgcodecs */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_imgcodecs; path = /usr/local/lib/libopencv_imgcodecs.dylib; sourceTree = "<absolute>"; };
+		956CE1D765D06615DEF51DDB /* OutputDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OutputDialog.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/OutputDialog.h; sourceTree = "<absolute>"; };
+		9B9ED679BC1CBCB001E80921 /* opencv_calib3d */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_calib3d; path = /usr/local/lib/libopencv_calib3d.dylib; sourceTree = "<absolute>"; };
+		A0D684F869E8659A8B9645BA /* TqcVisualOdemetry.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = TqcVisualOdemetry.pro; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcVisualOdemetry.pro; sourceTree = "<absolute>"; };
+		A1A67BEAA744704B29168D39 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		AEBD8FC60A11DC456B0BD274 /* opencv_video */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_video; path = /usr/local/lib/libopencv_video.dylib; sourceTree = "<absolute>"; };
+		B3BF6A520B31A7DA20D47FB6 /* TqcThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TqcThread.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcThread.cpp; sourceTree = "<absolute>"; };
+		B4F526BB36A57B8A6634F51F /* MatchDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MatchDialog.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/MatchDialog.cpp; sourceTree = "<absolute>"; };
+		B50F57C0066CE981C05EB519 /* TqcScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TqcScene.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcScene.h; sourceTree = "<absolute>"; };
+		B785961761DFE45BE08B5CEE /* TqcThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TqcThread.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcThread.h; sourceTree = "<absolute>"; };
+		C287E03DF34CBEFA13DCDCBF /* moc_OutputDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_OutputDialog.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/moc_OutputDialog.cpp; sourceTree = "<absolute>"; };
+		C844984803BA701C9F6BF7E9 /* swscale */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = swscale; path = /usr/local/lib/libswscale.dylib; sourceTree = "<absolute>"; };
+		C980F569B736BB10FDBE25E8 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Users/yinghuang/Qt/5.7/clang_64/lib/QtCore.framework; sourceTree = "<absolute>"; };
+		CAADD9D0E7BCA8FD206C059E /* TqcDebugControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TqcDebugControl.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcDebugControl.h; sourceTree = "<absolute>"; };
+		CB101DF2FEB93B0B46094067 /* opencv_videoio */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_videoio; path = /usr/local/lib/libopencv_videoio.dylib; sourceTree = "<absolute>"; };
+		D1F93849AA3DC2BFD9A47951 /* VoMainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = VoMainWindow.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/VoMainWindow.cpp; sourceTree = "<absolute>"; };
+		D43C8FA6127C8C18F2FB343D /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Users/yinghuang/Qt/5.7/clang_64/lib/QtGui.framework; sourceTree = "<absolute>"; };
+		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		D7F5BD1A361E16E138DC178E /* opencv_flann */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_flann; path = /usr/local/lib/libopencv_flann.dylib; sourceTree = "<absolute>"; };
+		DB6B379A33AD88C220D5D5BE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/main.cpp; sourceTree = "<absolute>"; };
+		DC4F6ED42B7AA87D882CB6FD /* avutil */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = avutil; path = /usr/local/lib/libavutil.dylib; sourceTree = "<absolute>"; };
+		DF3A8C5D27EFCF32558EE75A /* opencv_ml */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_ml; path = /usr/local/lib/libopencv_ml.dylib; sourceTree = "<absolute>"; };
+		E0B570984E339A1683A20695 /* ui_MatchDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_MatchDialog.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/ui_MatchDialog.h; sourceTree = "<absolute>"; };
+		E151BC61E9AD6C875D26D6F2 /* TqcBundleAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TqcBundleAdjust.h; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcBundleAdjust.h; sourceTree = "<absolute>"; };
+		E2E7EEDF0AF0C52EF47938A2 /* moc_TqcScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_TqcScene.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/moc_TqcScene.cpp; sourceTree = "<absolute>"; };
+		E34AC0F6081CDDD3754E6D63 /* TqcScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TqcScene.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/TqcScene.cpp; sourceTree = "<absolute>"; };
+		E388715271573D8A5E3E5DAE /* x264 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = x264; path = /usr/local/lib/libx264.dylib; sourceTree = "<absolute>"; };
+		E82FCDBC5EB21F75F15813E4 /* OutputDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OutputDialog.cpp; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/OutputDialog.cpp; sourceTree = "<absolute>"; };
+		ECAD76B97E412EF02EE2B4F2 /* OutputDialog.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = OutputDialog.ui; path = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/OutputDialog.ui; sourceTree = "<absolute>"; };
+		EDE61DAC3610E8BA9DD349FD /* g2o_types_sba_d */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = g2o_types_sba_d; path = "/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/g2o-master/lib/Debug/libg2o_types_sba_d.dylib"; sourceTree = "<absolute>"; };
+		EE3EA9D46073D75EB87AE756 /* QtOpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtOpenGL.framework; path = /Users/yinghuang/Qt/5.7/clang_64/lib/QtOpenGL.framework; sourceTree = "<absolute>"; };
+		EE90BAEF6760BF970DD6766C /* avcodec */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = avcodec; path = /usr/local/lib/libavcodec.dylib; sourceTree = "<absolute>"; };
+		FA1AA07CF24B6900EDD54332 /* g2o_stuff_d */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = g2o_stuff_d; path = "/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/g2o-master/lib/Debug/libg2o_stuff_d.dylib"; sourceTree = "<absolute>"; };
+		FC66008D576F98253E1AACEA /* QGLViewer */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = QGLViewer; path = "/Users/yinghuang/Qt/Examples/QGLView/libQGLViewer-2.6.4/QGLViewer/build/Debug/QGLViewer.framework/Versions/A/QGLViewer"; sourceTree = "<absolute>"; };
+		FDB3E92CAC3547FB7981B747 /* avdevice */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = avdevice; path = /usr/local/lib/libavdevice.dylib; sourceTree = "<absolute>"; };
+		FDCD14145649D527E134E3AC /* avformat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = avformat; path = /usr/local/lib/libavformat.dylib; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1C883685E82D5676953459A /* Link Binary With Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A078370DAF7CADDB64D54D /* opencv_core in Link Binary With Libraries */,
+				F0A9F27ED2CEED3241A0F29B /* opencv_videostab in Link Binary With Libraries */,
+				0C6B141319017E3905870955 /* opencv_video in Link Binary With Libraries */,
+				4B7C21B1359ADB5FD72B4438 /* opencv_videoio in Link Binary With Libraries */,
+				2D07EBEAF811DBF3CEB655A7 /* opencv_viz in Link Binary With Libraries */,
+				E0D539182A78F28676F4F114 /* opencv_superres in Link Binary With Libraries */,
+				049A8E5BB72C61A6D5F9186A /* opencv_stitching in Link Binary With Libraries */,
+				53816C40D2310847397AC29B /* opencv_shape in Link Binary With Libraries */,
+				B2288A2D34DDB0B2B89AF591 /* opencv_photo in Link Binary With Libraries */,
+				1E2F8DEFA8C39EC98FFE3A67 /* opencv_objdetect in Link Binary With Libraries */,
+				0365F78C4443395CA6BDBEF4 /* opencv_calib3d in Link Binary With Libraries */,
+				6E84C985B1785517221216A5 /* opencv_ml in Link Binary With Libraries */,
+				9232DA0D7D1814017437A363 /* opencv_highgui in Link Binary With Libraries */,
+				5131C1459B4549772CF10504 /* opencv_imgcodecs in Link Binary With Libraries */,
+				61F667D3AF55DBF060380CE9 /* opencv_flann in Link Binary With Libraries */,
+				27EB3E5BEB306CBF0B6EFA70 /* opencv_imgproc in Link Binary With Libraries */,
+				84F1796C590FAEBC2BAADD0F /* opencv_features2d in Link Binary With Libraries */,
+				91C8ADAE6D2147D70C91278A /* QGLViewer in Link Binary With Libraries */,
+				19928BA7B17D949AE2CC20E1 /* g2o_core_d in Link Binary With Libraries */,
+				7EE1DB772F69B1F6B7D09051 /* g2o_types_slam3d_d in Link Binary With Libraries */,
+				C1A8D34F9D799173C1A5FF03 /* g2o_solver_csparse_d in Link Binary With Libraries */,
+				CEEDA1EC0CE25F1C248DB3B2 /* g2o_stuff_d in Link Binary With Libraries */,
+				171DAEB8EA2ADC2A40081AF2 /* g2o_csparse_extension_d in Link Binary With Libraries */,
+				762A1E67C48125330EC4BD53 /* g2o_types_sba_d in Link Binary With Libraries */,
+				BA358861F74E287B54E0E712 /* cholmod in Link Binary With Libraries */,
+				617991209BF0FC78D1D2408E /* avcodec in Link Binary With Libraries */,
+				F1E8CBB01213238820F976AD /* x264 in Link Binary With Libraries */,
+				17266B66F00FA2761D3475A5 /* mp3lame in Link Binary With Libraries */,
+				6BFD2394A8B45165461A17C6 /* avformat in Link Binary With Libraries */,
+				3E93F27E01BB20C5B2BE8C86 /* avdevice in Link Binary With Libraries */,
+				B6611D04BFADABD1C9008863 /* avfilter in Link Binary With Libraries */,
+				ED29F3FC3F480022A5F65363 /* avutil in Link Binary With Libraries */,
+				7C8A4AC0B4D3A1EF182A68CE /* swscale in Link Binary With Libraries */,
+				9079CD915EAAEEAEB5E429EA /* QtOpenGL.framework in Link Binary With Libraries */,
+				2A00F922A9934E49D93B2EB9 /* QtWidgets.framework in Link Binary With Libraries */,
+				87C9454F875E8724E32C31F8 /* QtGui.framework in Link Binary With Libraries */,
+				1482AF7A01D6F79DB755416A /* QtCore.framework in Link Binary With Libraries */,
+				A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */,
+				8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */,
+				D52505CE155F2990643CDDA8 /* QtXml.framework in Link Binary With Libraries */,
+				8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */,
+				E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */,
+			);
+			name = "Link Binary With Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12E908B8A1C3C07C115504F5 /* Sources [uic] */ = {
+			isa = PBXGroup;
+			children = (
+				3538F64ABD8CFA563C887AD3 /* vomainwindow.ui */,
+				ECAD76B97E412EF02EE2B4F2 /* OutputDialog.ui */,
+				5E8A20268E2B3B3644C28529 /* MatchDialog.ui */,
+			);
+			name = "Sources [uic]";
+			sourceTree = "<group>";
+		};
+		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E2E7EEDF0AF0C52EF47938A2 /* moc_TqcScene.cpp */,
+				8DE4E71C449D02EA7FEB7383 /* moc_VoMainWindow.cpp */,
+				C287E03DF34CBEFA13DCDCBF /* moc_OutputDialog.cpp */,
+				4A9A372CE6C44F18A422FF1A /* moc_TqcThread.cpp */,
+				207E4612E0256E12B8B9ADA3 /* moc_MatchDialog.cpp */,
+				62E93A56E4A84DEA8FDB6466 /* ui_vomainwindow.h */,
+				07B93B32B26B66B9A8762BE6 /* ui_OutputDialog.h */,
+				E0B570984E339A1683A20695 /* ui_MatchDialog.h */,
+			);
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
+		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B379A33AD88C220D5D5BE /* main.cpp */,
+				21F0AC12464FE0A3E243E1ED /* TqcEncodeDecode.cpp */,
+				7C78DB2D3FE0DAA97D3CC525 /* TqcCamera.cpp */,
+				3F2701A35EB316BA6266FF92 /* TqcBundleAdjust.cpp */,
+				7B76846928971ED095278A82 /* Tqc3dViewer.cpp */,
+				E34AC0F6081CDDD3754E6D63 /* TqcScene.cpp */,
+				D1F93849AA3DC2BFD9A47951 /* VoMainWindow.cpp */,
+				E82FCDBC5EB21F75F15813E4 /* OutputDialog.cpp */,
+				84648D2B21B5A263E2EDD75D /* TqcDebugControl.cpp */,
+				B3BF6A520B31A7DA20D47FB6 /* TqcThread.cpp */,
+				B4F526BB36A57B8A6634F51F /* MatchDialog.cpp */,
+				230080827FA0EDCFE0EAA546 /* TqcEncodeDecode.h */,
+				3A3409C77D36D1F739E8654D /* TqcCamera.h */,
+				E151BC61E9AD6C875D26D6F2 /* TqcBundleAdjust.h */,
+				80F1007EA95A3753460F9A92 /* Tqc3dViewer.h */,
+				B50F57C0066CE981C05EB519 /* TqcScene.h */,
+				5DCF61E318D6918A6FA13272 /* VoMainWindow.h */,
+				956CE1D765D06615DEF51DDB /* OutputDialog.h */,
+				CAADD9D0E7BCA8FD206C059E /* TqcDebugControl.h */,
+				646FEF3C683527EB19F1C09C /* TqcDefines.h */,
+				022B2FF68FCC54F3E6E034F5 /* TqcTypes.h */,
+				B785961761DFE45BE08B5CEE /* TqcThread.h */,
+				19C9AAD7CD3BCEFA18E7348E /* MatchDialog.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0D684F869E8659A8B9645BA /* TqcVisualOdemetry.pro */,
+				2B18AC9E5262C1EBB875850D /* .qmake.stash */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20CD8DC58640914DFBA73AEF /* opencv_core */,
+				6C6CAEC0EA81CAAFFD89AC2C /* opencv_videostab */,
+				AEBD8FC60A11DC456B0BD274 /* opencv_video */,
+				CB101DF2FEB93B0B46094067 /* opencv_videoio */,
+				6891B5C96A235F1ED5A2C417 /* opencv_viz */,
+				53B7633754FC46FEDD8F11FD /* opencv_superres */,
+				33964D2A20573D76DAE50939 /* opencv_stitching */,
+				8AAAACFDB252ABED09161A09 /* opencv_shape */,
+				105F983FADB21488C39E44F7 /* opencv_photo */,
+				66983C54BB147F4B81B6A6EF /* opencv_objdetect */,
+				9B9ED679BC1CBCB001E80921 /* opencv_calib3d */,
+				DF3A8C5D27EFCF32558EE75A /* opencv_ml */,
+				56537984D5553E0283ECDF43 /* opencv_highgui */,
+				8F3220AC8D4D6E10B9C71087 /* opencv_imgcodecs */,
+				D7F5BD1A361E16E138DC178E /* opencv_flann */,
+				0A35011D482E6D9089E763E8 /* opencv_imgproc */,
+				87A059234557546133E4567E /* opencv_features2d */,
+				FC66008D576F98253E1AACEA /* QGLViewer */,
+				28711FF48239C7D64953A963 /* g2o_core_d */,
+				40E1E6B715E939F4BEA03866 /* g2o_types_slam3d_d */,
+				7E18FF978B33E171D0CC5B19 /* g2o_solver_csparse_d */,
+				FA1AA07CF24B6900EDD54332 /* g2o_stuff_d */,
+				8F0E3D9BE977D41D20422FDC /* g2o_csparse_extension_d */,
+				EDE61DAC3610E8BA9DD349FD /* g2o_types_sba_d */,
+				009510C121BC7D1118104CB2 /* cholmod */,
+				EE90BAEF6760BF970DD6766C /* avcodec */,
+				E388715271573D8A5E3E5DAE /* x264 */,
+				0F9416C798FEF86B99A23EB9 /* mp3lame */,
+				FDCD14145649D527E134E3AC /* avformat */,
+				FDB3E92CAC3547FB7981B747 /* avdevice */,
+				0EDCC72E08A60C6521FEC389 /* avfilter */,
+				DC4F6ED42B7AA87D882CB6FD /* avutil */,
+				C844984803BA701C9F6BF7E9 /* swscale */,
+				EE3EA9D46073D75EB87AE756 /* QtOpenGL.framework */,
+				81BAD8C3EA9A59F5ABF85CC9 /* QtWidgets.framework */,
+				D43C8FA6127C8C18F2FB343D /* QtGui.framework */,
+				C980F569B736BB10FDBE25E8 /* QtCore.framework */,
+				2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */,
+				A1A67BEAA744704B29168D39 /* IOKit.framework */,
+				109CC4182E31C3B3C7F515E2 /* QtXml.framework */,
+				D4B32C2222F82AC56BADEB21 /* OpenGL.framework */,
+				8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8C543AB96796ECAA2E65C57 /* TqcVisualOdemetry */ = {
+			isa = PBXGroup;
+			children = (
+				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
+				25B08E2869634E9BCBA333A2 /* Generated Sources */,
+				74B182DB50CB5611B5C1C297 /* Supporting Files */,
+				12E908B8A1C3C07C115504F5 /* Sources [uic] */,
+				AF39DD055C3EF8226FBE929D /* Frameworks */,
+				FE0A091FDBFB3E9C31B7A1BD /* Products */,
+			);
+			name = TqcVisualOdemetry;
+			sourceTree = "<group>";
+		};
+		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29C85916DF24718181E18289 /* TqcVisualOdemetry.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46B81DDDE3840C6C36B9EBFA /* TqcVisualOdemetry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "TqcVisualOdemetry" */;
+			buildPhases = (
+				F7E50F631C51CD5B5DC0BC43 /* Compile Sources */,
+				D1C883685E82D5676953459A /* Link Binary With Libraries */,
+				30414803F31797EB689AE508 /* Copy Bundle Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1A5FF6DD8602CBF0167832A /* PBXTargetDependency */,
+			);
+			name = TqcVisualOdemetry;
+			productName = TqcVisualOdemetry;
+			productReference = 29C85916DF24718181E18289 /* TqcVisualOdemetry.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB9C3763D02B1415CD9D565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "TqcVisualOdemetry" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8C543AB96796ECAA2E65C57 /* TqcVisualOdemetry */;
+			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46B81DDDE3840C6C36B9EBFA /* TqcVisualOdemetry */,
+				F22DE68F62D1D278EB27DA54 /* Qt Preprocess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30414803F31797EB689AE508 /* Copy Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Copy Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E618435888B9D49F8540165 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/ -f TqcVisualOdemetry.xcodeproj/qt_makeqmake.mak";
+			showEnvVarsInLog = 0;
+		};
+		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/ -f TqcVisualOdemetry.xcodeproj/qt_preprocess.mak";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E50F631C51CD5B5DC0BC43 /* Compile Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C71E02E035CF614305BB876 /* main.cpp in Compile Sources */,
+				33C59837A1E2B943286FAB6C /* TqcEncodeDecode.cpp in Compile Sources */,
+				5F29DDB884B9AE4DB6D48317 /* TqcCamera.cpp in Compile Sources */,
+				20D9D0EBF07CD6FB4A27C6C6 /* TqcBundleAdjust.cpp in Compile Sources */,
+				6530A720D3C8E62EB9F4C788 /* Tqc3dViewer.cpp in Compile Sources */,
+				153BF6B46FF5494883F1A862 /* TqcScene.cpp in Compile Sources */,
+				4A7A78EC2033B26144D4C30A /* VoMainWindow.cpp in Compile Sources */,
+				B98D8D70ED2F0E2FFBF20D91 /* OutputDialog.cpp in Compile Sources */,
+				C656382BB7E7468DEA59E5E5 /* TqcDebugControl.cpp in Compile Sources */,
+				7B1F9A21D72F3AE1069AC764 /* TqcThread.cpp in Compile Sources */,
+				7EB6F1247FD767E54A549FC4 /* MatchDialog.cpp in Compile Sources */,
+				F41D965C7D229C2630E47A42 /* moc_TqcScene.cpp in Compile Sources */,
+				C57A3508FF5D3C8F9FE1128E /* moc_VoMainWindow.cpp in Compile Sources */,
+				CED4CB6F214B8C4C1B4BE715 /* moc_OutputDialog.cpp in Compile Sources */,
+				9A9C81CB9F90F09E7F58AF6B /* moc_TqcThread.cpp in Compile Sources */,
+				595B92678652B10DA0D38D3D /* moc_MatchDialog.cpp in Compile Sources */,
+			);
+			name = "Compile Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1A5FF6DD8602CBF0167832A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22DE68F62D1D278EB27DA54 /* Qt Preprocess */;
+			targetProxy = 18AF48961DDE982E00ECC0D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		339EE1B2CC4FC24589A0EA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/yinghuang/Qt/5.7/clang_64/lib,
+					/Users/yinghuang/Qt/5.7/clang_64/lib,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					/usr/local/include,
+					"/Users/yinghuang/Qt/Examples/QGLView/libQGLViewer-2.6.4/QGLViewer/QGLViewer.framework/Headers",
+					"../../../ORB_SLAM/ORB_SLAM2_for_osx/eigen-3.3-rc1",
+					"../../../g2o_ba_example/g2o-master/g2o/solvers/cholmod",
+					"../../../g2o_ba_example/g2o-master",
+					"../../../g2o_ba_example/g2o-master/build",
+					../../../g2o_ba_example/SuiteSparse/SuiteSparse_config,
+					../../../g2o_ba_example/SuiteSparse/CHOLMOD/Include,
+					u00efu00bcu008fusr/local/include,
+					/Users/yinghuang/Qt/5.7/clang_64/lib/QtOpenGL.framework/Headers,
+					/Users/yinghuang/Qt/5.7/clang_64/lib/QtWidgets.framework/Headers,
+					/Users/yinghuang/Qt/5.7/clang_64/lib/QtGui.framework/Headers,
+					/Users/yinghuang/Qt/5.7/clang_64/lib/QtXml.framework/Headers,
+					/Users/yinghuang/Qt/5.7/clang_64/lib/QtCore.framework/Headers,
+					.,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					.,
+					"/Users/yinghuang/Qt/5.7/clang_64/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"/Users/yinghuang/Qt/Examples/QGLView/libQGLViewer-2.6.4/QGLViewer/QGLViewer.framework/Versions/2/",
+					"/Users/yinghuang/Qt/Examples/QGLView/libQGLViewer-2.6.4/QGLViewer/build/Debug/QGLViewer.framework/Versions/A",
+					/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/SuiteSparse/lib,
+					"/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/g2o-master/lib/Debug",
+					/Users/yinghuang/Qt/5.7/clang_64/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGL_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGL_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-stdlib=libc++",
+					"-Wl,-rpath,/Users/yinghuang/Qt/5.7/clang_64/lib",
+					"-F/Users/yinghuang/Qt/5.7/clang_64/lib",
+					"-L/usr/local/lib",
+					"-L/Users/yinghuang/Qt/Examples/QGLView/libQGLViewer-2.6.4/QGLViewer/QGLViewer.framework/Versions/2/",
+					"-L/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/SuiteSparse/lib",
+					"-L/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/g2o-master/lib/Debug",
+				);
+				PRODUCT_NAME = TqcVisualOdemetry;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+				SYMROOT = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/;
+			};
+			name = Release;
+		};
+		3AA6C32AC930069E80220CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/yinghuang/Qt/5.7/clang_64/lib,
+					/Users/yinghuang/Qt/5.7/clang_64/lib,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					/usr/local/include,
+					"/Users/yinghuang/Qt/Examples/QGLView/libQGLViewer-2.6.4/QGLViewer/QGLViewer.framework/Headers",
+					"../../../ORB_SLAM/ORB_SLAM2_for_osx/eigen-3.3-rc1",
+					"../../../g2o_ba_example/g2o-master/g2o/solvers/cholmod",
+					"../../../g2o_ba_example/g2o-master",
+					"../../../g2o_ba_example/g2o-master/build",
+					../../../g2o_ba_example/SuiteSparse/SuiteSparse_config,
+					../../../g2o_ba_example/SuiteSparse/CHOLMOD/Include,
+					u00efu00bcu008fusr/local/include,
+					/Users/yinghuang/Qt/5.7/clang_64/lib/QtOpenGL.framework/Headers,
+					/Users/yinghuang/Qt/5.7/clang_64/lib/QtWidgets.framework/Headers,
+					/Users/yinghuang/Qt/5.7/clang_64/lib/QtGui.framework/Headers,
+					/Users/yinghuang/Qt/5.7/clang_64/lib/QtXml.framework/Headers,
+					/Users/yinghuang/Qt/5.7/clang_64/lib/QtCore.framework/Headers,
+					.,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					.,
+					"/Users/yinghuang/Qt/5.7/clang_64/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"/Users/yinghuang/Qt/Examples/QGLView/libQGLViewer-2.6.4/QGLViewer/QGLViewer.framework/Versions/2/",
+					"/Users/yinghuang/Qt/Examples/QGLView/libQGLViewer-2.6.4/QGLViewer/build/Debug/QGLViewer.framework/Versions/A",
+					/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/SuiteSparse/lib,
+					"/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/g2o-master/lib/Debug",
+					/Users/yinghuang/Qt/5.7/clang_64/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGL_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGL_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-stdlib=libc++",
+					"-Wl,-rpath,/Users/yinghuang/Qt/5.7/clang_64/lib",
+					"-F/Users/yinghuang/Qt/5.7/clang_64/lib",
+					"-L/usr/local/lib",
+					"-L/Users/yinghuang/Qt/Examples/QGLView/libQGLViewer-2.6.4/QGLViewer/QGLViewer.framework/Versions/2/",
+					"-L/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/SuiteSparse/lib",
+					"-L/Users/yinghuang/development/hy_code/SLAM/g2o_ba_example/g2o-master/lib/Debug",
+				);
+				PRODUCT_NAME = TqcVisualOdemetry;
+				QT_LIBRARY_SUFFIX = _debug;
+				SDKROOT = macosx;
+				SYMROOT = /Users/yinghuang/development/hy_code/SLAM/TqcSLAM/VisualOdemetry/TqcVisualOdemetry/;
+			};
+			name = Debug;
+		};
+		6666AA5E688052234F6758D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = TqcVisualOdemetry;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		77418F46922677BB04ED38DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGL_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGL_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_CORE_LIB",
+				);
+				PRODUCT_NAME = TqcVisualOdemetry;
+				QT_LIBRARY_SUFFIX = _debug;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "TqcVisualOdemetry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77418F46922677BB04ED38DD /* Debug */,
+				6666AA5E688052234F6758D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "TqcVisualOdemetry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA6C32AC930069E80220CF1 /* Debug */,
+				339EE1B2CC4FC24589A0EA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DB9C3763D02B1415CD9D565 /* Project object */;
+}
